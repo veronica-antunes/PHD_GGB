@@ -1,6 +1,6 @@
 # PHD GGB paper
 
-Here you can find all source codes described or used to get the results presented in the below publication. The codes are described in detail in the documentation provided. More information can be find in my PhD thesis or in the paper.
+Here you can find some of the source codes described or used to get the results presented in the below publication. The codes are described in detail in the documentation provided. More information can be find in my PhD thesis or in the paper.
 
 If you use any of these tools, please cite as:
 

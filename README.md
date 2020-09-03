@@ -16,6 +16,6 @@ Each script runs independently from the others and contains one or several funct
 
   - Picks_Quality.pt: Gives a weight number to each station pick. Like in Magnitude.py script, the input file needs to be in NORDIC format and follow a SEISAN database structure. The weight is based on the signal to noise ratio around the pick and the uncertainty interval. The Appendix section in Antunes et al., 2020 explains the process in detail.
   
-  - Velest_tools.py: A set of tools that work together with VELEST output files and might be used to automatize VELEST. For more details on VELEST code check https://seg.ethz.ch/software/velest.html.
+  - Velest_tools.py: A set of tools that work together with VELEST output files and might be used to automatize VELEST. For more details on VELEST code check https://seg.ethz.ch/software/velest.html. VELEST also comes by default with SEISAN software package.
 
   - get_isolapz.py: A tool to help to create the input files necessary to use the ISOLA toolbox. The tool creates: i) instrument response file (pz file, with sensitivity, poles and zeros information) from a /several dataless or from an online ArcLink server; ii) converts the waveforms into SAC format. For more information on ISOLA toolbox package, check http://geo.mff.cuni.cz/~jz/for_ISOLAnews/.

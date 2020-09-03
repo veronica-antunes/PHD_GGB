@@ -18,4 +18,4 @@ Each script runs independently from the others and contains one or several funct
   
   - Velest_tools.py: A set of tools that work together with VELEST output files and might be used to automatize VELEST. For more details on VELEST code check https://seg.ethz.ch/software/velest.html.
 
-  - get_isolapz.py: A tool to help to create the input files necessary to use the ISOLA toolbox. The tool creates: i) instrument response file (pz file, with sensitivity, poles and zeros information) from a /several dataless or from an online repository; ii) converts the waveforms into SAC format. For more information on ISOLA, check http://seismo.geology.upatras.gr/isola/.
+  - get_isolapz.py: A tool to help to create the input files necessary to use the ISOLA toolbox. The tool creates: i) instrument response file (pz file, with sensitivity, poles and zeros information) from a /several dataless or from an online repository; ii) converts the waveforms into SAC format. For more information on ISOLA, check http://geo.mff.cuni.cz/~jz/for_ISOLAnews/.

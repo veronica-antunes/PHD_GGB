@@ -167,7 +167,7 @@ def determ_magn(s_file, t_window, wav_path, dataless_path, distance_type='hypoce
 						print ('Missing waveform for '+ stat)
 
 					if tr_n and not tr_n[0].stats.longitude :
-						print  'Missing instrument response for ' + stat
+						print  ('Missing instrument response for ' + stat)
 						paz_stat_e = False
 						paz_stat_n = False
 						#print 'Unknown problems with station ' + stat

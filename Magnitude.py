@@ -372,7 +372,7 @@ def determ_magn(s_file, t_window, wav_path, dataless_path, distance_type='hypoce
 				if print_stat_mag :
 					stat_info=sorted(stat_info, key = lambda x: x.split(' ')[1])
 					for stat_info_lines in stat_info: 
-						f.write(stat_info_lines+'\n')
+						g.write(stat_info_lines+'\n')
 					g.write('--------------------------------------------------------' 
 						+ '\n')
 

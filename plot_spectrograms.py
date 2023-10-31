@@ -14,6 +14,7 @@ from obspy.io.xseed import Parser
 from obspy.signal.tf_misfit import cwt
 from glob import glob
 from matplotlib.ticker import AutoMinorLocator
+import matplotlib
 
 
 def wav_spectrogram(waveforms, fmi1, fma1, fmi2, fma2, clip, yscale='linear') :
@@ -166,11 +167,11 @@ def all_spectrogram(waveform, maxv, fx=5, fy=4, fs=11, outfile='spectrogram.png'
 		if n ==  len(zx)-1 :
 			ax.set_xlabel('time [s] after '+str(t0)[0:-8], fontsize=fs)
 
-		subplots_adjust(left=0.1, bottom=None, right=0.87, top=0.95, wspace=None, hspace=0.05)
+		fig.subplots_adjust(left=0.1, bottom=None, right=0.87, top=0.95, wspace=None, hspace=0.05)
 		number=number-0.205
 
 	ax2 = fig.add_axes([0.89, 0.18, 0.03, 0.65])
-	mappable = ax.images[0] 
+	mappable = ax.collections[0]
 	cb=plt.colorbar(mappable=mappable, cax=ax2, orientation='vertical')
 			#labels=np.round(np.arange(0, maxv,maxv/3.0),1)
 			#cb.set_ticks(labels)

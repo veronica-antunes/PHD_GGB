@@ -160,7 +160,7 @@ def all_spectrogram(waveform, maxv, fx=5, fy=4, fs=11, outfile='spectrogram.png'
 		#ax.set_xlim([ti,tf])
 
 		ax.set_title(stat, fontsize=fs, x=0.93, y=0.70, weight='bold', color='white')
-		ax.set_yticks(np.arange(0, zx[n].stats.sampling_rate/2,zx[n].stats.sampling_rate/5))
+		##ax.set_yticks(np.arange(0, zx[n].stats.sampling_rate/2,zx[n].stats.sampling_rate/5))
 
 		if n < len(zx)-1 :
 			ax.axes.get_xaxis().set_ticklabels([]) #to remove the labels on top figures
